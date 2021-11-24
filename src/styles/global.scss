@@ -1,0 +1,21 @@
+$primary: red;
+
+$second: aquamarine;
+
+html {
+	font-family: generalFont;
+}
+
+body{
+	background-color: $second;
+}
+
+div{
+	color: $primary
+}
+
+.container__sub{
+	display: block;
+	height: 140px;
+	background: url('../images/webpack.png');
+}
