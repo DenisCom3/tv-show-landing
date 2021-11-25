@@ -1,21 +1,16 @@
-$primary: red;
+$white: #fff;
 
-$second: aquamarine;
 
-html {
-	font-family: generalFont;
+
+html{
+	font-size: 10px;
 }
+
 
 body{
-	background-color: $second;
-}
-
-div{
-	color: $primary
-}
-
-.container__sub{
-	display: block;
-	height: 140px;
-	background: url('../images/webpack.png');
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	font-family: Mulish;
+	
 }
