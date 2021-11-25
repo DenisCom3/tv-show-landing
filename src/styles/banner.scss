@@ -1,0 +1,134 @@
+@import 'global';
+
+.section-banner{
+	border-bottom: .1rem solid #2F2E2E;
+	position: relative;
+	overflow: hidden;
+
+	&__image{
+		position: absolute;
+		right: 0;
+		z-index: -1;
+	}
+
+}
+
+.banner{
+	max-width: 56.2rem;
+	padding-top: 12.2rem;
+	padding-bottom: 20.3rem;
+	background-color: #000;
+	box-shadow: 100px 0px 100px #000;
+
+	&__title{
+		font-family: Marcellus;
+		line-height: 7.5rem;
+		font-size: 8rem;
+
+	}
+	&__text{
+		color: #C2C2C2;
+		font-size: 1.8rem;
+		line-height: 1.6rem;
+	}
+
+	&-info{
+		font-weight: 800;
+		margin-bottom: 2.9rem;
+		&__year{
+			margin-right: 1.8rem;
+		}
+		&__age{
+			margin-right: 1.8rem;
+			position: relative;
+			width: 6rem;
+			text-align: center;
+			display: inline-block;
+
+			&::before{
+				content: "";
+				display: block;
+				width: 100%;
+				height: 2.4rem;
+				background-image: url('../images/age-border.svg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: calc(50% - 1.2rem);
+			}
+
+		}
+		&__time{
+			margin-right: 6.1rem;
+
+		}
+		&__rating{
+			position: relative;
+			&::after{
+				content: '';
+				display: block;
+				width: 1.6rem;
+				height: 1.6rem;
+				background-image: url('../images/star.svg');
+				margin-left: 1rem;
+				position: absolute;
+				top: calc(50% - .8rem);
+				right: -2.6rem;
+
+			}
+		}
+	}
+
+	&-control{
+		&__btn{
+			background-color: transparent;
+			border: none;
+			border-radius: 10rem;
+			padding: 1.5rem 3.5rem;
+			font-family: Mulish;
+			font-weight: 800;
+
+		}
+		&__btn-main{
+			background: $bg-gradient-safe;
+			background: $bg-gradient;
+			color: $white;
+			position: relative;
+			padding-left: 6rem;
+			margin-right: 3rem;
+			box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+			transition: .2s ease box-shadow;
+
+			&:hover{
+			box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
+
+			}
+
+			&::after{
+				content: '';
+				width: 1.4rem;
+				height: 1.8rem;
+				display: block;
+				background-image: url('../images/button-playr.svg');
+				position: absolute;
+				left: 3rem;
+				top: calc(50% - .9rem);
+			}
+
+		}
+		&__btn-more{
+			background: $white;
+			color: #323232;
+			transition: .2s ease background-color;
+
+
+			&:hover{
+				background-color: #c2c2c2;
+				}
+	
+
+		}
+	}
+}
