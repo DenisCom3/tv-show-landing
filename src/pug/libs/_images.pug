@@ -1,3 +1,8 @@
 mixin image(name,type)
 	img(src=require(`../src/images/${name}.${type}`), alt=name)
-	
+
+
+mixin movies-item(src)
+	.movies-item 
+		a(href="#").movies__link
+			img(src=require(`../src/images/posters/${src}.png`), alt="poster").movies__img
