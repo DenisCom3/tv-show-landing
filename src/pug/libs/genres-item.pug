@@ -1,0 +1,7 @@
+mixin genres-item(type)
+	- var title = type.charAt(0).toUpperCase() + type.slice(1)
+	
+	.genres-item&attributes(attributes) 
+		.genres-icon
+			img(src=require(`../src/images/genres/${type}.svg`), alt="").genres__image
+		h3.genres__title #{title}

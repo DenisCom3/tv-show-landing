@@ -24,3 +24,16 @@ section.section
 			+movies-item('1')
 			+movies-item('1')
 		button.section__btn See more
+section.section
+	.container 
+		h2.section__h2 
+			a(href="#").section__h2-link  Popular Genres
+		.genres 
+			+genres-item('romance')(class="genres-item_romance")
+			+genres-item('drama')(class="genres-item_drama")
+			+genres-item('historical')(class="genres-item_historical")
+			+genres-item('action')(class="genres-item_action")
+			+genres-item('sci-fi')(class="genres-item_sci-fi")
+			+genres-item('horror')(class="genres-item_horror")
+			+genres-item('comedy')(class="genres-item_comedy")
+			+genres-item('documentary')(class="genres-item_documentary")
