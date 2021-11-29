@@ -1,6 +1,14 @@
 $white: #fff;
 $bg-gradient: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
 $bg-gradient-safe: rgb(50,108,255);
+$r_minmob:            320px;
+$r_mob_360:           360px;
+$r_mob_400:           400px;
+$r_mob_500:           500px;
+$r_mob_600:           600px;
+$r_tab:               768px;
+$r_desk:             1000px;
+$r_desk_hd:          1200px;
 
 
 html{
@@ -13,6 +21,9 @@ body{
 	color: #fff;
 	font-size: 16px;
 	font-family: Mulish;
+	@media (max-width: $r_tab) {
+        font-size: 14px;
+    }
 	
 }
 

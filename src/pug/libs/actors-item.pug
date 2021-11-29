@@ -1,0 +1,5 @@
+mixin actors-item(num, name) 
+	.actors-item 
+		a(href="").actors__link
+			img(src=require(`../src/images/actors/actor${num}.png`), alt="").actors__img
+		h3.actors__title #{name}

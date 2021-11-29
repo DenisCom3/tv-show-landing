@@ -1,0 +1,23 @@
+include libs/_libs
+footer 
+	.footer 
+		.footer-item 
+			a(href="#").footer-logo
+				img(src=require(`../src/images/logo.svg`), alt="").footer-logo__img 
+		.footer-item 
+			+footer-list(['Voice over and Subtitle',
+							'Media Center',
+							'Privacy',
+							'Contact us'])
+		.footer-item 
+			+footer-list(['Voice Description',
+							'Investor Relations',
+							'Legal Provisions'])
+		.footer-item 
+			+footer-list(['Help Center',
+							'Job Opportunities',
+							'Cookies Preferences'])
+		.footer-item 
+			+footer-list(['Gift Cards',
+							'Terms of Use',
+							'Corporate Informations'])

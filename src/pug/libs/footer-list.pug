@@ -1,0 +1,6 @@
+mixin footer-list(items)
+	//- - var list = items
+	ul.footer-list 
+		each item in items
+			li.footer-list__item
+				a(href="#").footer-list__link= item 
